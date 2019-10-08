@@ -1,0 +1,8 @@
+red-light time controlled by rotary encoder
+mode shifted by pushbutton on rotary encoder
+
+four modes:
+	alternating
+	NS stopped
+	EW stopped
+	4-way stop
