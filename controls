@@ -1,6 +1,12 @@
-red-light time controlled by rotary encoder
-yellow-light time is a steady five seconds
-green light time is whatever red-light time - yellow-light time leaves left with a minimum of 1
+greenLightDuration is controlled by rotary encoder and displayed on the UI >=1
+yellow-light time is five seconds
+in alternating mode, if green light or yellow light is on one axis, red is on other.
+
+
+
+
+
+green light time is whatever red-light time - yellow-light time leaves left with a minimum of 
 mode shifted by pushbutton on rotary encoder
 
 four modes:
@@ -17,4 +23,9 @@ targets to switch:
 	EW_yellow
 	EW_green
 
+Alternating mode:
+	loop:
+		set greenRemaining = greenLight Duration
+		when greenlight Duration exhausted set yellow light for yellow-light-duration
+		when yellow-light-duration is exhausted, set red light, wait moment, then alternate moving axis 
 
