@@ -1,4 +1,6 @@
 red-light time controlled by rotary encoder
+yellow-light time is a steady five seconds
+green light time is whatever red-light time - yellow-light time leaves left with a minimum of 1
 mode shifted by pushbutton on rotary encoder
 
 four modes:
@@ -6,3 +8,13 @@ four modes:
 	NS stopped
 	EW stopped
 	4-way stop
+
+targets to switch:
+	NS_red
+	NS_yellow
+	NS-green
+	EW_red
+	EW_yellow
+	EW_green
+
+
